@@ -12,16 +12,18 @@
 		424DBF9D2187F05800C588A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424DBF9B2187F05800C588A6 /* Main.storyboard */; };
 		424DBF9F2187F05A00C588A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424DBF9E2187F05A00C588A6 /* Assets.xcassets */; };
 		424DBFA22187F05A00C588A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424DBFA02187F05A00C588A6 /* LaunchScreen.storyboard */; };
+		42ABD9F921889E8800F05F0E /* PushupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABD9F821889E8800F05F0E /* PushupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		424DBF942187F05800C588A6 /* Joshua.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Joshua.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		424DBF942187F05800C588A6 /* pushuptracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushuptracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		424DBF972187F05800C588A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		424DBF992187F05800C588A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		424DBF9C2187F05800C588A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		424DBF9E2187F05A00C588A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		424DBFA12187F05A00C588A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		424DBFA32187F05A00C588A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42ABD9F821889E8800F05F0E /* PushupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,7 +40,7 @@
 		424DBF8B2187F05700C588A6 = {
 			isa = PBXGroup;
 			children = (
-				424DBF962187F05800C588A6 /* Joshua */,
+				424DBF962187F05800C588A6 /* pushuptracker */,
 				424DBF952187F05800C588A6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,12 +48,12 @@
 		424DBF952187F05800C588A6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				424DBF942187F05800C588A6 /* Joshua.app */,
+				424DBF942187F05800C588A6 /* pushuptracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		424DBF962187F05800C588A6 /* Joshua */ = {
+		424DBF962187F05800C588A6 /* pushuptracker */ = {
 			isa = PBXGroup;
 			children = (
 				424DBF972187F05800C588A6 /* AppDelegate.swift */,
@@ -60,16 +62,17 @@
 				424DBF9E2187F05A00C588A6 /* Assets.xcassets */,
 				424DBFA02187F05A00C588A6 /* LaunchScreen.storyboard */,
 				424DBFA32187F05A00C588A6 /* Info.plist */,
+				42ABD9F821889E8800F05F0E /* PushupViewController.swift */,
 			);
-			path = Joshua;
+			path = pushuptracker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		424DBF932187F05800C588A6 /* Joshua */ = {
+		424DBF932187F05800C588A6 /* pushuptracker */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 424DBFA62187F05A00C588A6 /* Build configuration list for PBXNativeTarget "Joshua" */;
+			buildConfigurationList = 424DBFA62187F05A00C588A6 /* Build configuration list for PBXNativeTarget "pushuptracker" */;
 			buildPhases = (
 				424DBF902187F05800C588A6 /* Sources */,
 				424DBF912187F05800C588A6 /* Frameworks */,
@@ -79,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = Joshua;
+			name = pushuptracker;
 			productName = Joshua;
-			productReference = 424DBF942187F05800C588A6 /* Joshua.app */;
+			productReference = 424DBF942187F05800C588A6 /* pushuptracker.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 424DBF8F2187F05700C588A6 /* Build configuration list for PBXProject "Joshua" */;
+			buildConfigurationList = 424DBF8F2187F05700C588A6 /* Build configuration list for PBXProject "pushuptracker" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				424DBF932187F05800C588A6 /* Joshua */,
+				424DBF932187F05800C588A6 /* pushuptracker */,
 			);
 		};
 /* End PBXProject section */
@@ -137,6 +140,7 @@
 			files = (
 				424DBF9A2187F05800C588A6 /* ViewController.swift in Sources */,
 				424DBF982187F05800C588A6 /* AppDelegate.swift in Sources */,
+				42ABD9F921889E8800F05F0E /* PushupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Joshua/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/pushuptracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Joshua/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/pushuptracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +319,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		424DBF8F2187F05700C588A6 /* Build configuration list for PBXProject "Joshua" */ = {
+		424DBF8F2187F05700C588A6 /* Build configuration list for PBXProject "pushuptracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				424DBFA42187F05A00C588A6 /* Debug */,
@@ -324,7 +328,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		424DBFA62187F05A00C588A6 /* Build configuration list for PBXNativeTarget "Joshua" */ = {
+		424DBFA62187F05A00C588A6 /* Build configuration list for PBXNativeTarget "pushuptracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				424DBFA72187F05A00C588A6 /* Debug */,
