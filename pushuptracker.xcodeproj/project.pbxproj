@@ -56,15 +56,23 @@
 		424DBF962187F05800C588A6 /* pushuptracker */ = {
 			isa = PBXGroup;
 			children = (
+				42AD6CE821913755008FFF7D /* view controller */,
 				424DBF972187F05800C588A6 /* AppDelegate.swift */,
-				424DBF992187F05800C588A6 /* ViewController.swift */,
 				424DBF9B2187F05800C588A6 /* Main.storyboard */,
 				424DBF9E2187F05A00C588A6 /* Assets.xcassets */,
 				424DBFA02187F05A00C588A6 /* LaunchScreen.storyboard */,
 				424DBFA32187F05A00C588A6 /* Info.plist */,
-				42ABD9F821889E8800F05F0E /* PushupViewController.swift */,
 			);
 			path = pushuptracker;
+			sourceTree = "<group>";
+		};
+		42AD6CE821913755008FFF7D /* view controller */ = {
+			isa = PBXGroup;
+			children = (
+				424DBF992187F05800C588A6 /* ViewController.swift */,
+				42ABD9F821889E8800F05F0E /* PushupViewController.swift */,
+			);
+			path = "view controller";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
