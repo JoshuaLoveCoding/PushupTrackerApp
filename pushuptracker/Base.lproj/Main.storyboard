@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yh2-ZW-7Mn" kind="show" id="I6W-wY-fIt"/>
+                                    <segue destination="yh2-ZW-7Mn" kind="show" id="V9c-4m-OlL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-ql-D3J">
