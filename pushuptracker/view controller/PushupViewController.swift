@@ -9,7 +9,7 @@
 import UIKit
 
 class PushupViewController: UIViewController {
-
+    
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var countLabel: UILabel!
     
@@ -21,21 +21,25 @@ class PushupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         nameTextField.delegate = self
+        
         // Do any additional setup after loading the view.
     }
     
     @IBAction func stopButtonPressed(_ sender: Any) {
-            let name = nameTextField.text ?? "???"
-            print("\(name) did \(count) pushup(s)")
-            count = 0
+        let name = nameTextField.text ?? "???"
+        print("\(name) did \(count) pushup(s)")
+        
+        let workout = Workout(name: name, date: Date(), pushupsCompleted: count)
+        PersistenceManager.sharedInstance.saveWorkout(workout: workout)
+        
+        count = 0
     }
     
     @IBAction func noseButtonPressed(_ sender: Any) {
-            count += 1
+                count += 1
     }
-
 }
 
 extension PushupViewController: UITextFieldDelegate {
@@ -43,6 +47,7 @@ extension PushupViewController: UITextFieldDelegate {
     //hide keyboard on pressing return
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         nameTextField.resignFirstResponder()
+        
         return true
     }
     
@@ -56,7 +61,7 @@ extension PushupViewController: UITextFieldDelegate {
         if decimalRange != nil {
             return false
         }
+        
         return true
     }
-    
 }

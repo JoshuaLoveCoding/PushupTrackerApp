@@ -24,7 +24,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="yh2-ZW-7Mn" kind="show" id="V9c-4m-OlL"/>
+                                    <segue destination="yh2-ZW-7Mn" kind="show" id="dmb-QF-YOD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NUl-ql-D3J">
@@ -33,6 +33,9 @@
                                 <state key="normal" title="View History">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="sXF-Wg-sQo" kind="show" id="d7V-Ka-k14"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="7jX-P6-lTi">
                                 <rect key="frame" x="122" y="128" width="170" height="149.5"/>
@@ -76,6 +79,34 @@
             </objects>
             <point key="canvasLocation" x="2184.057971014493" y="54.241071428571423"/>
         </scene>
+        <!--History Table View Controller-->
+        <scene sceneID="dN4-MM-BsU">
+            <objects>
+                <tableViewController id="sXF-Wg-sQo" customClass="HistoryTableViewController" customModule="pushuptracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sAa-t4-ngJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="historyCell" id="c1i-Y0-tso">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c1i-Y0-tso" id="ksQ-Dr-pQD">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="sXF-Wg-sQo" id="GhM-we-vna"/>
+                            <outlet property="delegate" destination="sXF-Wg-sQo" id="g81-PL-uN9"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RuF-tF-aT5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2954" y="381"/>
+        </scene>
         <!--Pushup View Controller-->
         <scene sceneID="rAm-XJ-cvn">
             <objects>
@@ -104,7 +135,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="stopButtonPressed:" destination="yh2-ZW-7Mn" eventType="touchUpInside" id="6XF-pQ-lPa"/>
+                                                    <action selector="stopButtonPressed:" destination="yh2-ZW-7Mn" eventType="primaryActionTriggered" id="acK-RJ-ndQ"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -124,7 +155,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="noseButtonPressed:" destination="yh2-ZW-7Mn" eventType="touchUpInside" id="eDB-bl-nnj"/>
+                                            <action selector="noseButtonPressed:" destination="yh2-ZW-7Mn" eventType="primaryActionTriggered" id="XTk-Qx-poS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -140,28 +171,13 @@
                         <viewLayoutGuide key="safeArea" id="w9w-rN-yav"/>
                     </view>
                     <connections>
-                        <outlet property="countLabel" destination="WPg-8l-k20" id="RuO-GG-Tud"/>
-                        <outlet property="nameTextField" destination="SPK-Pm-oi2" id="Xwa-7c-QfF"/>
+                        <outlet property="countLabel" destination="WPg-8l-k20" id="GVL-2j-ZSt"/>
+                        <outlet property="nameTextField" destination="SPK-Pm-oi2" id="HO4-nR-qwm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cm-uJ-pzJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2951" y="-287"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="RD7-hm-PXK">
-            <objects>
-                <viewController id="ygO-bt-hJU" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TJD-Px-San">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="eOy-Ie-f2h"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="WhE-yk-EXt" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2951" y="433"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Q8g-uo-6E3">
