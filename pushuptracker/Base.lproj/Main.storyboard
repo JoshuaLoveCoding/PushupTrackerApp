@@ -52,6 +52,9 @@
                                 <state key="normal" title="Find Gyms">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="findGymsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6WB-jI-iaY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.12805495544842593" green="0.0185631905305228" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,20 +73,56 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Pushup Tracker" id="dDV-rc-7Nx"/>
+                    <navigationItem key="navigationItem" title="Pushup Tracker" id="dDV-rc-7Nx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="VIG-or-LxW">
+                            <connections>
+                                <action selector="shareButtonPressed:" destination="BYZ-38-t0r" id="kPM-Pf-gkN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="pushupRecordLabel" destination="j3b-pc-5TJ" id="gxM-0d-MKE"/>
+                        <segue destination="VkU-HW-1m3" kind="show" identifier="gymsSegue" id="uRC-Hn-HCN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2184.057971014493" y="54.241071428571423"/>
         </scene>
+        <!--Gyms Table View Controller-->
+        <scene sceneID="8kC-MO-xvm">
+            <objects>
+                <tableViewController id="VkU-HW-1m3" customClass="GymsTableViewController" customModule="pushuptracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="59H-Vc-rl2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="gry-NB-r4C">
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gry-NB-r4C" id="dxG-0z-Dm9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="gymCell"/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="VkU-HW-1m3" id="39d-T8-jwx"/>
+                            <outlet property="delegate" destination="VkU-HW-1m3" id="WK8-W5-mOQ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aCb-78-uXb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2184" y="785"/>
+        </scene>
         <!--History Table View Controller-->
         <scene sceneID="dN4-MM-BsU">
             <objects>
                 <tableViewController id="sXF-Wg-sQo" customClass="HistoryTableViewController" customModule="pushuptracker" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sAa-t4-ngJ">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sAa-t4-ngJ" customClass="Gyms">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -95,6 +134,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration" identifier="historyCell"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

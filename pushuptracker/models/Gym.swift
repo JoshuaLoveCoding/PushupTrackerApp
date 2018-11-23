@@ -7,3 +7,9 @@
 //
 
 import Foundation
+
+struct Gym {
+    let name: String
+    let address: String
+    let iconUrl: String?
+}

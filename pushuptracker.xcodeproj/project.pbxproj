@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		421086CA21A7882100E8B791 /* FourSquareAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421086C921A7882100E8B791 /* FourSquareAPIManager.swift */; };
 		421086CC21A7884300E8B791 /* Gym.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421086CB21A7884300E8B791 /* Gym.swift */; };
-		421086CE21A7885E00E8B791 /* FouSquareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421086CD21A7885E00E8B791 /* FouSquareResponse.swift */; };
+		421086CE21A7885E00E8B791 /* FourSquareResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421086CD21A7885E00E8B791 /* FourSquareResponse.swift */; };
 		421086D021A7888500E8B791 /* GymsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421086CF21A7888500E8B791 /* GymsTableViewController.swift */; };
 		424DBF982187F05800C588A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424DBF972187F05800C588A6 /* AppDelegate.swift */; };
 		424DBF9A2187F05800C588A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 424DBF992187F05800C588A6 /* ViewController.swift */; };
@@ -25,7 +25,7 @@
 /* Begin PBXFileReference section */
 		421086C921A7882100E8B791 /* FourSquareAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareAPIManager.swift; sourceTree = "<group>"; };
 		421086CB21A7884300E8B791 /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
-		421086CD21A7885E00E8B791 /* FouSquareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FouSquareResponse.swift; sourceTree = "<group>"; };
+		421086CD21A7885E00E8B791 /* FourSquareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareResponse.swift; sourceTree = "<group>"; };
 		421086CF21A7888500E8B791 /* GymsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymsTableViewController.swift; sourceTree = "<group>"; };
 		424DBF942187F05800C588A6 /* pushuptracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pushuptracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		424DBF972187F05800C588A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 			children = (
 				42DD3F06219CDEB1008936E9 /* Workout.swift */,
 				421086CB21A7884300E8B791 /* Gym.swift */,
-				421086CD21A7885E00E8B791 /* FouSquareResponse.swift */,
+				421086CD21A7885E00E8B791 /* FourSquareResponse.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -191,7 +191,7 @@
 				421086CA21A7882100E8B791 /* FourSquareAPIManager.swift in Sources */,
 				42ABD9F921889E8800F05F0E /* PushupViewController.swift in Sources */,
 				42DD3F07219CDEB1008936E9 /* Workout.swift in Sources */,
-				421086CE21A7885E00E8B791 /* FouSquareResponse.swift in Sources */,
+				421086CE21A7885E00E8B791 /* FourSquareResponse.swift in Sources */,
 				42DD3F05219CDE6F008936E9 /* PersistenceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
