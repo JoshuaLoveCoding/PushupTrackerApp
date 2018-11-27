@@ -16,13 +16,17 @@
 		424DBF9D2187F05800C588A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424DBF9B2187F05800C588A6 /* Main.storyboard */; };
 		424DBF9F2187F05A00C588A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424DBF9E2187F05A00C588A6 /* Assets.xcassets */; };
 		424DBFA22187F05A00C588A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424DBFA02187F05A00C588A6 /* LaunchScreen.storyboard */; };
+		428B68C821ACC6E000DECF27 /* GymTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 428B68C721ACC6E000DECF27 /* GymTableViewCell.swift */; };
+		429FF5D821ACE6FA00814E27 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 429FF5D721ACE6FA00814E27 /* Extensions.swift */; };
 		42ABD9F921889E8800F05F0E /* PushupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42ABD9F821889E8800F05F0E /* PushupViewController.swift */; };
 		42DD3F05219CDE6F008936E9 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD3F04219CDE6F008936E9 /* PersistenceManager.swift */; };
 		42DD3F07219CDEB1008936E9 /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD3F06219CDEB1008936E9 /* Workout.swift */; };
 		42DD3F09219CDF32008936E9 /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DD3F08219CDF32008936E9 /* HistoryTableViewController.swift */; };
+		620F1FCD5AF90D5B60EDCE4E /* Pods_pushuptracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D934C75731A4049B85CB1BD /* Pods_pushuptracker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D934C75731A4049B85CB1BD /* Pods_pushuptracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pushuptracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		421086C921A7882100E8B791 /* FourSquareAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareAPIManager.swift; sourceTree = "<group>"; };
 		421086CB21A7884300E8B791 /* Gym.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gym.swift; sourceTree = "<group>"; };
 		421086CD21A7885E00E8B791 /* FourSquareResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourSquareResponse.swift; sourceTree = "<group>"; };
@@ -34,10 +38,14 @@
 		424DBF9E2187F05A00C588A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		424DBFA12187F05A00C588A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		424DBFA32187F05A00C588A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428B68C721ACC6E000DECF27 /* GymTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GymTableViewCell.swift; sourceTree = "<group>"; };
+		429FF5D721ACE6FA00814E27 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		42ABD9F821889E8800F05F0E /* PushupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupViewController.swift; sourceTree = "<group>"; };
 		42DD3F04219CDE6F008936E9 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		42DD3F06219CDEB1008936E9 /* Workout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		42DD3F08219CDF32008936E9 /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		4B3C78512477C60E321FAF88 /* Pods-pushuptracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushuptracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-pushuptracker/Pods-pushuptracker.release.xcconfig"; sourceTree = "<group>"; };
+		53032CF229042EE0AACC3D36 /* Pods-pushuptracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pushuptracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pushuptracker/Pods-pushuptracker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,12 +53,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				620F1FCD5AF90D5B60EDCE4E /* Pods_pushuptracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		267560C1750EC27FA9048E0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D934C75731A4049B85CB1BD /* Pods_pushuptracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		421086C821A787B300E8B791 /* manager */ = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +82,8 @@
 			children = (
 				424DBF962187F05800C588A6 /* pushuptracker */,
 				424DBF952187F05800C588A6 /* Products */,
+				8447F55740A6D1DF225F30EB /* Pods */,
+				267560C1750EC27FA9048E0B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -87,6 +106,8 @@
 				424DBF9E2187F05A00C588A6 /* Assets.xcassets */,
 				424DBFA02187F05A00C588A6 /* LaunchScreen.storyboard */,
 				424DBFA32187F05A00C588A6 /* Info.plist */,
+				428B68C721ACC6E000DECF27 /* GymTableViewCell.swift */,
+				429FF5D721ACE6FA00814E27 /* Extensions.swift */,
 			);
 			path = pushuptracker;
 			sourceTree = "<group>";
@@ -112,6 +133,15 @@
 			path = models;
 			sourceTree = "<group>";
 		};
+		8447F55740A6D1DF225F30EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53032CF229042EE0AACC3D36 /* Pods-pushuptracker.debug.xcconfig */,
+				4B3C78512477C60E321FAF88 /* Pods-pushuptracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +149,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 424DBFA62187F05A00C588A6 /* Build configuration list for PBXNativeTarget "pushuptracker" */;
 			buildPhases = (
+				18720FD9A229DA0CEAB31CFE /* [CP] Check Pods Manifest.lock */,
 				424DBF902187F05800C588A6 /* Sources */,
 				424DBF912187F05800C588A6 /* Frameworks */,
 				424DBF922187F05800C588A6 /* Resources */,
+				0350D83AE7875D23EF0B143E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -178,6 +210,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0350D83AE7875D23EF0B143E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-pushuptracker/Pods-pushuptracker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-pushuptracker/Pods-pushuptracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18720FD9A229DA0CEAB31CFE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pushuptracker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		424DBF902187F05800C588A6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -190,8 +269,10 @@
 				42DD3F09219CDF32008936E9 /* HistoryTableViewController.swift in Sources */,
 				421086CA21A7882100E8B791 /* FourSquareAPIManager.swift in Sources */,
 				42ABD9F921889E8800F05F0E /* PushupViewController.swift in Sources */,
+				429FF5D821ACE6FA00814E27 /* Extensions.swift in Sources */,
 				42DD3F07219CDEB1008936E9 /* Workout.swift in Sources */,
 				421086CE21A7885E00E8B791 /* FourSquareResponse.swift in Sources */,
+				428B68C821ACC6E000DECF27 /* GymTableViewCell.swift in Sources */,
 				42DD3F05219CDE6F008936E9 /* PersistenceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,6 +417,7 @@
 		};
 		424DBFA72187F05A00C588A6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53032CF229042EE0AACC3D36 /* Pods-pushuptracker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +435,7 @@
 		};
 		424DBFA82187F05A00C588A6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B3C78512477C60E321FAF88 /* Pods-pushuptracker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
